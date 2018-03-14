@@ -5,11 +5,19 @@ int main()
 char a[10],b[10];
 int i,n;
 printf("\nEnter the string:");
-scanf("%d",a);
+scanf("%s",a);
 n=strlen(a);
 for(i=0;i<n;i=i+2)
 {
 b[i]=a[i];
-printf("%s",b[i]);
+printf("%c",b[i]);
 }
 printf(" ");
+for(i=1;i<n;i=i+2)
+{
+b[i]=a[i];
+  printf("%c",b[i]);
+}
+  return 0;
+}
+    
